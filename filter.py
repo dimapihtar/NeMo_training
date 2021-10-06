@@ -2,9 +2,7 @@ from tqdm import tqdm
 import numpy as np
 
 def num_lines_in_file(fname):
-    """
-    Returns the number of lines in a file.
-    """
+ 
     with open(fname, 'r') as f:
         for i, _ in enumerate(f):
             pass
@@ -14,13 +12,7 @@ def filter_tsv_with_conf(
     input_file, output_file_lang_1, output_file_lang_2,
     confidence_threshold=None, confidence_column=None
 ):
-    """
-    Filters a tsv file that has confidence scores associated with each parallel example.
-
-    For example:
-
-    1.23 \t This is a sentence in lang1 \t This is a sentence in lang2
-    """
+  
     print()
     print('====================================')
     print('======= TSV Conf Filtering =========')
