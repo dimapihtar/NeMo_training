@@ -2,9 +2,8 @@ from tqdm import tqdm
 import numpy as np
 
 def num_lines_in_file(fname):
- 
     with open(fname, 'r') as f:
-        for i, _ in enumerate(f):
+        for i,_ in enumerate(f):
             pass
     return i + 1
 
